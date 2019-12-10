@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>task3</title>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container">
+			<form class="form">
+				<h1>task3</h1>
+				<input id="firstName" type="text" name="name" placeholder = "First name" required>
+				<input id="lastName" type="text" name="name" placeholder = "Last name" required>
+				<input id="email" type="email" placeholder="Email"  required/>
+				<button id="addUserBtn" onclick="addUser()" class="addUserBtn" type="submit" value="Create">Add user</button>
+			</form>
+			<table id="listOfUsers" class="wrapper ">
+				<caption class="tableTitle">List of users</caption> 
+				<thead>
+					<tr class="columnTitle">
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Email</th>
+						<th>Date</th>
+						<th></th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
